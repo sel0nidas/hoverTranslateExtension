@@ -30,9 +30,6 @@ function test(req, res, next){
 }
 
 app.get(('/api/:word'), test);
-app.get(('/simeray'), function(req, res){
-    res.sendFile("./index.html", {root: __dirname });
-});
 
 http.listen(port, () => {
     console.log("HTTP Server Started")    
